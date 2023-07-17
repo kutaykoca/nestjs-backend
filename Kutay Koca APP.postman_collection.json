@@ -1,0 +1,61 @@
+{
+	"info": {
+		"_postman_id": "0f9498a5-beaf-4065-b705-2658618fd136",
+		"name": "Kutay Koca APP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16111134",
+		"_collection_link": "https://grey-meteor-505034.postman.co/workspace/KutayKoca-Nestjs---Python~9ef784e4-37b0-43e5-b8f9-7c6e227f09a9/collection/16111134-0f9498a5-beaf-4065-b705-2658618fd136?action=share&creator=16111134&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "Get All Station",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/location/get/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"location",
+						"get",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Rotation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"latitude\": \"40.34105\",\n    \"longitude\": \"27.95825\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/station/calculate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"station",
+						"calculate"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
